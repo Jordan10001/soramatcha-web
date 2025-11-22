@@ -3,12 +3,13 @@ import Icon  from '../../components/icon'
 
 export default function ContactPage() {
     const username = 'your_username'
-    const WhatsApp = '085106830306'
+    const number = '085106830306'
+    const text = 'Hello, I would like to get in touch with you.'
     
     const igUrl = `https://instagram.com/${username}`
-    const phoneNumber = WhatsApp.replace(/^0/, '') // remove leading zero if present  
-    const waUrl = `https://wa.me/62${WhatsApp}`
-
+    const phoneNumber = number.replace(/^0/, '') // remove leading zero if present  
+    const encodedText = encodeURIComponent(text)
+    const waUrl = `https://wa.me/62${phoneNumber}?text=${encodedText}`
     return (
         <div className="min-h-screen ">
             <Navbar />
