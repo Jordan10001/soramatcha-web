@@ -4,7 +4,7 @@ export default function SquareImage({
 } ) {
   return (
     <div>
-        <div className="aspect-square w-24 sm:w-28 md:w-36 lg:w-48 " aria-hidden="true">
+        <div className="aspect-square" aria-hidden="true">
           <img src={src} alt={alt} className="w-full h-full object-cover block" />
         </div>
     </div>
