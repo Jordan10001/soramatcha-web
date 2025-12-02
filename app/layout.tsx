@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     siteName: "Soramatcha",
     images: [
       {
-        url: `${defaultUrl}/og.png`,
+        url: `${defaultUrl}/og.jpg`,
         width: 1200,
         height: 630,
         alt: "Soramatcha",
